@@ -1,0 +1,6 @@
+include AUTHORS
+include LICENSE
+include DESCRIPTION.md
+include README.md
+graft djangocms_parallax
+global-exclude *.orig *.pyc *.log

@@ -1,0 +1,31 @@
+/*
+Part of the djangocms-parallax package. This LESS-file is for use with Bootstrap 3. You might want to customize it to
+fit your theming.
+
+This file is part of the public domain. Do whatever you want with it.
+*/
+
+.parallax-content {
+    .jumbotron();
+    margin-bottom: 0;
+    background: @body-bg;
+
+    a.btn {
+        .btn-lg();
+        .btn-primary();
+    }
+
+    .img {
+        .hidden-xs();
+        .hidden-sm();
+        .make-md-column(4);
+        img {
+            // This is written specifically written for square images. It might get weird in other cases.
+            .img-responsive();
+            min-width: 100%;
+        }
+    }
+    .text {
+        .make-md-column(8);
+    }
+}
