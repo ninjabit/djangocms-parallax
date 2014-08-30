@@ -1,1 +1,2 @@
-<div class="parallax-img" data-image="{{ instance.image.url }}" data-width="{{ instance.image.width }}" data-height="{{ instance.image.height }}"></div>
+{% load thumbnail %}
+<div class="parallax-img" data-image="{{ instance.image.url }}" data-image-mobile="{{ instance.image|thumbnail_url:'mobile' }}" data-width="{{ instance.image.width }}" data-height="{{ instance.image.height }}"></div>
