@@ -15,7 +15,7 @@
         $('.parallax-img').imageScroll({
             container: $('#parallax-{{ instance.pk }}'),
             touch: touch,
-            imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+            //imageAttribute: (touch === true) ? 'image-mobile' : 'image',
             speed: {{ instance.speed|stringformat:'f' }},
             holderMinHeight: {{ instance.holder_min_height|stringformat:'i' }},
             coverRatio: {{ instance.cover_ratio|stringformat:'f' }}
